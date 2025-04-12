@@ -5,10 +5,10 @@
                 {{ __('Detalles de la Reserva') }}
             </h2>
             <div>
-                <a href="{{ route('reservas.edit', $reserva) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                <a href="{{ route('reservas.edit', $reserva) }}" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded mr-2">
                     Editar
                 </a>
-                <a href="{{ route('reservas.index') }}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                <a href="{{ route('reservas.index') }}" class="bg-gray-500 hover:bg-gray-700 text-black font-bold py-2 px-4 rounded">
                     Volver
                 </a>
             </div>

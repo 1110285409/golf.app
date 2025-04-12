@@ -20,7 +20,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('campos', CampoController::class);
     
     // Rutas para Jugadores
-    Route::resource('jugadores', JugadorController::class);
+    Route::resource('jugadores', JugadorController::class)->parameters([
+        'jugadores' => 'jugador'
+    ]);
     
     // Rutas para Reservas
     Route::resource('reservas', ReservaController::class);
